@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "NB-International-Pro";
+    src: url("./assets/fonts/NBInternationalProRegular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Nb-International-Pro", sans-serif;
+}
