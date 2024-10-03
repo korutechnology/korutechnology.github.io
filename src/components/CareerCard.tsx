@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Briefcase, ChevronRight, X } from "lucide-react";
+import { Briefcase, ChevronRight } from "lucide-react";
 import {
     Dialog,
     DialogContent,
