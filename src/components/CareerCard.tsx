@@ -2,7 +2,6 @@ import { Briefcase, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const CareerCard = ({ career }: { career: any }) => {
-    console.log(career);
     return (
         <div className="flex flex-col space-y-3 bg-white p-6 rounded-lg shadow-md">
             <Briefcase className="h-6 w-6" />
