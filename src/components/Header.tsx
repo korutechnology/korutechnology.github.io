@@ -12,7 +12,8 @@ export default function Header({
                 <img
                     src={"/src/assets/images/white-logo.png"}
                     alt="Koru Strategy Advisors Logo"
-                    className="h-[40px]"
+                    height={"40px"}
+                    width={"40px"}
                     loading="lazy"
                 />
                 <span className="hidden md:block font-bold">
