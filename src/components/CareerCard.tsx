@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Briefcase, ChevronRight, X } from "lucide-react";
-// import { Button } from "@/components/ui/button";
 import {
     Dialog,
     DialogContent,
@@ -42,18 +41,12 @@ const CareerCard = ({ career }: { career: Career }) => {
             </div>
 
             <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
-                <DialogContent className="sm:max-w-[425px] md:max-w-[600px] lg:max-w-[800px]">
-                    <DialogHeader>
+                <DialogContent className="sm:max-w-[425px] md:max-w-[600px] lg:max-w-[800px] h-[90vh] flex flex-col">
+                    <DialogHeader className="flex-shrink-0">
                         <DialogTitle>{career.jobTitle}</DialogTitle>
-                        <button
-                            className="absolute right-4 top-4"
-                            onClick={() => setIsModalOpen(false)}
-                        >
-                            <span className="sr-only">Close</span>
-                        </button>
                     </DialogHeader>
-                    <DialogDescription>
-                        <div className="mt-4 space-y-4">
+                    <DialogDescription className="flex-grow overflow-y-auto">
+                        <div className="space-y-4">
                             <div>
                                 <h4 className="font-semibold mb-2">
                                     Job Summary
@@ -109,9 +102,9 @@ const CareerCard = ({ career }: { career: Career }) => {
                             )}
                         </div>
                     </DialogDescription>
-                    <div className="mt-6">
+                    <div className="mt-6 flex-shrink-0">
                         <button
-                            className="w-full"
+                            className="w-full bg-primary text-primary-foreground hover:bg-primary/90 inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2"
                             onClick={() => window.open("#", "_blank")}
                         >
                             Apply Now
