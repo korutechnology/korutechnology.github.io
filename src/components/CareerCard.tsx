@@ -47,10 +47,8 @@ const CareerCard = ({ career }: { career: Career }) => {
                         <DialogTitle>{career.jobTitle}</DialogTitle>
                         <button
                             className="absolute right-4 top-4"
-                            // variant="ghost"
                             onClick={() => setIsModalOpen(false)}
                         >
-                            <X className="h-4 w-4" />
                             <span className="sr-only">Close</span>
                         </button>
                     </DialogHeader>
