@@ -5,8 +5,9 @@ import HeroSection from "../../components/HeroSection";
 import ServicesSection from "../../components/ServiceSection";
 import AboutSection from "../../components/AboutSection";
 import CareersSection from "../../components/CareerSection";
-import ContactSection from "../../components/ContactSection";
 import Footer from "../../components/Footer";
+import Parallax from "@/components/Parallax";
+import Motivation from "@/components/Motivation";
 
 export default function LandingPage() {
     const [careers, setCareers] = useState<any[]>([]);
@@ -23,12 +24,13 @@ export default function LandingPage() {
     return (
         <div className="flex flex-col min-h-screen">
             <Header scrollToSection={scrollToSection} />
-            <main className="flex-1">
+            <main className="flex-1 bg-black">
                 <HeroSection />
+                <Motivation />
+                <Parallax />
                 <ServicesSection />
                 <AboutSection />
                 <CareersSection careers={careers} />
-                <ContactSection />
             </main>
             <Footer />
         </div>

@@ -1,30 +1,68 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function HeroSection() {
+    // Define animations for the section and elements
+    const sectionVariants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0 },
+    };
+
+    const imageVariants = {
+        hidden: { opacity: 0, scale: 0.8 },
+        visible: { opacity: 1, scale: 1 },
+    };
+
+    const textVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0 },
+    };
+
     return (
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-black text-white">
+        <motion.section
+            className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-black text-white"
+            initial="hidden"
+            animate="visible"
+            variants={sectionVariants}
+            transition={{ duration: 0.5 }}
+        >
             <div className="container px-4 md:px-6">
                 <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-                    <img
-                        // src={"/src/assets/images/talent.avif"}
+                    <motion.img
                         src={import.meta.env.BASE_URL + "/images/talent.avif"}
                         width={600}
                         height={400}
                         alt="Consulting team collaborating"
-                        className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+                        className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last transition-transform duration-300 ease-in-out transform hover:scale-105"
                         loading="lazy"
+                        variants={imageVariants}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 0.5 }}
                     />
                     <div className="flex flex-col justify-center space-y-4">
                         <div className="space-y-2">
-                            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                            <motion.h1
+                                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                                variants={textVariants}
+                                initial="hidden"
+                                animate="visible"
+                                transition={{ duration: 0.5 }}
+                            >
                                 Elevate Your Business with Koru Strategy
                                 Advisors
-                            </h1>
-                            <p className="max-w-[600px] text-gray-300 md:text-xl">
+                            </motion.h1>
+                            <motion.p
+                                className="max-w-[600px] text-gray-300 md:text-xl"
+                                variants={textVariants}
+                                initial="hidden"
+                                animate="visible"
+                                transition={{ duration: 0.5 }}
+                            >
                                 Expert consulting and talent solutions for tech
                                 and retail industries. Unlock your potential
                                 today.
-                            </p>
+                            </motion.p>
                         </div>
                         <div className="flex flex-col gap-2 min-[400px]:flex-row">
                             <Link
@@ -43,6 +81,6 @@ export default function HeroSection() {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 }

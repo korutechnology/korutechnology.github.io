@@ -22,7 +22,7 @@ interface Career {
 
 const CareerCard = ({ career }: { career: Career }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
-
+    const [isApply, setIsApply] = useState(false);
     return (
         <>
             <div
@@ -105,9 +105,11 @@ const CareerCard = ({ career }: { career: Career }) => {
                     <div className="mt-6 flex-shrink-0">
                         <button
                             className="w-full bg-primary text-primary-foreground hover:bg-primary/90 items-center justify-center rounded-md text-sm font-medium transition-colors h-10 px-4 py-2 outline-none focus:outline-none"
-                            onClick={() => window.open("#", "_blank")}
+                            onClick={() => setIsApply(true)}
                         >
-                            Apply Now
+                            {!isApply
+                                ? "Apply Now"
+                                : "Send your CV to people@koruindonesia.com"}
                         </button>
                     </div>
                 </DialogContent>

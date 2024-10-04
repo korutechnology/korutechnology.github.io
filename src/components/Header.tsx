@@ -15,6 +15,7 @@ export default function Header({
                     height={"40px"}
                     width={"40px"}
                     loading="lazy"
+                    className="hover:animate-pulse"
                 />
                 <span className="hidden md:block font-bold">
                     Koru Strategy Advisors
