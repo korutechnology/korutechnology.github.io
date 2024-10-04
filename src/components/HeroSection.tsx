@@ -7,7 +7,7 @@ export default function HeroSection() {
                 <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
                     <img
                         // src={"/src/assets/images/talent.avif"}
-                        src={"/images/talent.avif"}
+                        src={import.meta.env.BASE_URL + "/images/talent.avif"}
                         width={600}
                         height={400}
                         alt="Consulting team collaborating"

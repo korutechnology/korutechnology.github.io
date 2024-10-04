@@ -10,7 +10,7 @@ export default function Header({
         <header className="px-4 lg:px-6 h-16 flex items-center">
             <Link className="flex items-center justify-center gap-1" to="#">
                 <img
-                    src={"/images/white-logo.avif"}
+                    src={import.meta.env.BASE_URL + "/images/white-logo.avif"}
                     alt="Koru Strategy Advisors Logo"
                     height={"40px"}
                     width={"40px"}

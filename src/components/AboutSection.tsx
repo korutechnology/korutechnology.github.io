@@ -4,7 +4,7 @@ export default function AboutSection() {
             <div className="container px-4 md:px-6">
                 <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
                     <img
-                        src={"/images/about.avif"}
+                        src={import.meta.env.BASE_URL + "/images/about.avif"}
                         width={600}
                         height={400}
                         alt="Our team at work"
