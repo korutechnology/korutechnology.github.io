@@ -1,4 +1,4 @@
-import careersData from "../../assets/careers.json";
+import careersData from "@/assets/careers.json";
 import { useEffect, useState } from "react";
 import Header from "../../components/Header";
 import HeroSection from "../../components/HeroSection";
