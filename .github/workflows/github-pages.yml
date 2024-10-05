@@ -25,17 +25,22 @@ jobs:
       - name: Set up Node.js (for example if you are using a JavaScript-based build)
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: "20"
 
       - name: Install dependencies
         run: npm install
 
       - name: Build
-        run: npm run build-github
+        run: npm run build
+
+      - name: Upload artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          name: "github-pages"
+          path: dist
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: actions/deploy-pages@v4
         with:
-          allow_empty_commit: true
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          token: ${{ secrets.GITHUB_TOKEN }}
+          artifact_name: "github-pages"
