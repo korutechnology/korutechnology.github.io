@@ -10,7 +10,10 @@ export default {
                 sm: "calc(var(--radius) - 4px)",
             },
             backgroundImage: {
-                parallax: 'url("images/parallax.avif")',
+                // development
+                // parallax: 'url("images/parallax.avif")',
+                // build / production
+                parallax: 'url("../images/parallax.avif")',
             },
             colors: {
                 background: "hsl(var(--background))",
