@@ -34,11 +34,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          
-      # - name: Deploy to GitHub Pages
-      #   run: |
-      #     git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-      #     npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # publish_dir: ./dist
