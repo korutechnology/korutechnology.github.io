@@ -32,9 +32,6 @@ export default function Header({
         <NavLink to="#careers" onClick={() => scrollToSection("careers")}>
           Careers
         </NavLink>
-        <NavLink to="#contact" onClick={() => scrollToSection("contact")}>
-          Contact
-        </NavLink>
       </nav>
     </header>
   );
