@@ -33,14 +33,9 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Upload artifacts
-        uses: actions/upload-pages-artifact@v3
-        with:
-          name: "gh-pages"
-          path: dist
-
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          artifact_name: "gh-pages"
+          allow_empty_commit: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
