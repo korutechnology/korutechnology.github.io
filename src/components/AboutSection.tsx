@@ -10,7 +10,7 @@ export default function AboutSection() {
       <div className="px-4 md:px-6 lg:px-12 2xl:px-24">
         <div ref={ref} className="grid gap-6 lg:grid-cols-2 lg:gap-12">
           <motion.img
-            src={import.meta.env.BASE_URL + "/images/about.avif"}
+            src={"/images/about.avif"}
             width={600}
             height={400}
             alt="Our team at work"
