@@ -33,6 +33,15 @@ jobs:
       - name: Build
         run: npm run build-github
 
+      - name: Debuging pwd
+        run: pwd
+
+      - name: debuging list file
+        run: ls -a
+
+      - name: debuging list file
+        run: ls dist -a
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
