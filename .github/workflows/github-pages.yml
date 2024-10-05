@@ -30,14 +30,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: debug path
-        run: ls /
-
       - name: Build
-        run: npm run build-github
-
-      - name: debug path
-        run: ls /
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
