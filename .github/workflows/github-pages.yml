@@ -39,6 +39,9 @@ jobs:
       - name: Debug - List /dist files
         run: ls -la ./dist
 
+      - name: Debug path
+        run: pwd
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3.8.0
         with:
