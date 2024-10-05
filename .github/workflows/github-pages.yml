@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3.0.2
+        uses: actions/checkout@v2
 
       - name: Set up Node.js (for example if you are using a JavaScript-based build)
         uses: actions/setup-node@v3.5.1
