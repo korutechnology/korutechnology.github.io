@@ -42,10 +42,8 @@ jobs:
       - name: Debug path
         run: pwd
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
-        if: github.ref == 'refs/heads/gh-pages'
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3.8.0
         with:
+          publish_dir: /home/runner/work/korutechnology.github.io/korutechnology.github.io
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          cname: $(cat CNAME)
