@@ -30,6 +30,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: debug path
+        run: ls /
+
       - name: Build
         run: npm run build-github
 
