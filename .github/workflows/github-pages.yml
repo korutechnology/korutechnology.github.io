@@ -31,7 +31,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: vite build --base=/
+        run: npm run build-github
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
