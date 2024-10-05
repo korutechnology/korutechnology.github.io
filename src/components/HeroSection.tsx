@@ -29,7 +29,7 @@ export default function HeroSection() {
       <div className="px-4 md:px-6 lg:px-12 2xl:px-24">
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
           <motion.img
-            src="src/assets/images/talent.avif"
+            src={import.meta.env.BASE_URL + "/images/talent.avif"}
             width={600}
             height={400}
             alt="Consulting team collaborating"
