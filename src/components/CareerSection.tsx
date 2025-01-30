@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import CareerCard from "./CareerCard";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
@@ -60,19 +59,6 @@ export default function CareersSection({ careers }: { careers: any[] }) {
                             <CareerCard career={career} />
                         </motion.div>
                     ))}
-                </motion.div>
-                <motion.div
-                    className="mt-12 text-center"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={inView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 1 }}
-                >
-                    <Link
-                        to="#"
-                        className="inline-flex h-9 items-center justify-center rounded-md bg-black px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-black/80 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                    >
-                        View All Openings
-                    </Link>
                 </motion.div>
             </div>
         </section>
