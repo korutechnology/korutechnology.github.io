@@ -44,4 +44,4 @@ jobs:
           allow_empty_commit: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          cname: koruindonesia.comhttps://koruindonesia.com/
+          cname: koruindonesia.com
