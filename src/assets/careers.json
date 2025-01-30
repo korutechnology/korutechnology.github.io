@@ -73,7 +73,8 @@
         "additionalNote": "Both positions are employed under our company (Koru Indonesia) for the Worldcoin project, not directly hired by Worldcoin.",
         "location": {
             "address": "12 Rengas Raya Street, RT.05/RW.09, Rengas Sub-district, East Ciputat District, South Tangerang City, Banten 15412, Indonesia",
-            "name": "World: Pusat Verifikasi (Bintaro)"
+            "name": "World: Pusat Verifikasi (Bintaro)",
+            "map": "https://maps.app.goo.gl/gNSEdv8nvALKCeEd8"
         }
     },
     {
@@ -98,7 +99,8 @@
         "additionalNote": "Both positions are employed under our company (Koru Indonesia) for the Worldcoin project, not directly hired by Worldcoin.",
         "location": {
             "address": "M9-10 Madison Grande, Boulevard Diponegoro Street, Gading Sub-district, Serpong District, Tangerang Regency, Banten 15334, Indonesia",
-            "name": "World: Pusat Verifikasi (Gading Serpong)"
+            "name": "World: Pusat Verifikasi (Gading Serpong)",
+            "map": "https://maps.app.goo.gl/gNSEdv8nvALKCeEd8"
         }
     }
 ]
