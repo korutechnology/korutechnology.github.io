@@ -34,7 +34,13 @@ const CareerCard = ({ career }: { career: Career }) => {
                 className="flex flex-col space-y-3 bg-white p-6 rounded-lg shadow-md cursor-pointer transition-all hover:shadow-lg"
                 onClick={() => setIsModalOpen(true)}
             >
-                <Briefcase className="h-6 w-6 text-primary w-full" />
+                <div className="flex justify-between items-start">
+                    <Briefcase className="h-6 w-6 text-primary" />
+                    <div className="flex items-start gap-1 text-gray-500 text-sm">
+                        <MapPin className="h-4 w-4 flex-shrink-0" />
+                        <span>{career.location.name}</span>
+                    </div>
+                </div>
                 <h3 className="text-xl font-bold">{career.jobTitle}</h3>
                 <p className="text-gray-500 line-clamp-3">
                     {career.jobSummary}
