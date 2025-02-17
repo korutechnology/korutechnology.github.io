@@ -135,7 +135,7 @@ const CareerCard = ({ career }: { career: Career }) => {
                     </DialogDescription>
                     <div className="mt-6 flex-shrink-0">
                         <a
-                            href={!isApply ? "#" : `https://wa.me/6281936124241?text=${encodeURIComponent(`Hi, saya tertarik untuk posisi "${career.jobTitle}" di ${career.location.name}`)}`}
+                            href={!isApply ? "#" : `https://wa.me/6289528268420?text=${encodeURIComponent(`Hi, saya tertarik untuk posisi "${career.jobTitle}" di ${career.location.name}`)}`}
                             target={isApply ? "_blank" : undefined}
                             rel={isApply ? "noopener noreferrer" : undefined}
                             className={`w-full text-center ${
